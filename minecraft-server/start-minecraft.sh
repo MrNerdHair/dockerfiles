@@ -44,6 +44,12 @@ case $TYPE in
   FORGE)
     # norm := the official Minecraft version as Forge is tracking it. dropped the third part starting with 1.8
     case $VANILLA_VERSION in
+      1.5.*)
+        norm=$VANILLA_VERSION
+      ;;
+      1.6.*)
+        norm=$VANILLA_VERSION
+      ;;
       1.7.*)
         norm=$VANILLA_VERSION
       ;;
